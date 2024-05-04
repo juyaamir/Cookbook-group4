@@ -1,65 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia" />
     <!--  <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Tangerine"> -->
     <title>CookBook Group4</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="main-container postion-fixed">
-        <div class="main-container__left mx-4">
-            <div class="left-container ">
-                <header>
-                    <div class="header mt-4">
-                        <img src="./pictures/Miso Hungry.png" alt="logo">
-                        <h1 class="text-3xl header-font">Miso Happy</h1>
-                    </div>
-                    <p class="text-center font-thin text-xs">420/ Recipes</p>
-                </header>
-                <hr>
-                <select name="select" id="1" class="border my-2 uppercase text-">
-                    <option value="dinner">Breakfast</option>
-                    <option value="lunch" selected>lunch</option>
-                    <option value="dinner">Dinner</option>
-                </select>
-                <hr>
-                <nav class="flex">
-                    <menu class=" menu text-base border h-screen">
-                        <li class=""><a href="#">salad</a></li>
-                        <li><a href="#">soap</a></li>
-                        <li><a href="#">grain bowl</a></li>
-                        <li><a href="#">kebab</a></li>
-                        <li><a href="#">rice</a></li>
-
-                        <li class="mt-8 border-y text-center bg-green-700 text-white hover:bg-green-800">
-                            <a href="#">Add Section</a>
-                        </li>
-                    </menu>
-                    <hr>
-                    <ul class=" ul text-base border">
-                        <li><a href="#">low Cooker Golde Soup</a></li>
-                        <li><a href="#">Honey Shrimp Soup</a></li>
-                        <li><a href="#">Spicy Miso Romwn</a></li>
-                        <li><a href="#">Coconut Corn Chowder</a></li>
-                        <li><a href="#">Vegetable Soup</a></li>
-                        <li><a href="#">Extra Spicy</a></li>
-                        <li><a href="#">Chicken Soup</a></li>
-                        <li class="mt-8 border-y text-center bg-green-700 text-white hover:bg-green-800">
-                            <a href="#">Add Recipe</a>
-                        </li>
-                    </ul>
-                </nav>
+      <div class="main-container__left mx-4">
+        <div class="left-container">
+          <header>
+            <div class="header mt-4">
+              <img src="./pictures/Miso Hungry.png" alt="logo" />
+              <h1 class="text-3xl header-font">Miso Happy</h1>
             </div>
-        </div>
-        <div class="main-container__right">
-        </div>
-    </div>
-</body>
+            <p class="text-center font-thin text-xs">420/ Recipes</p>
+          </header>
+          <hr />
+          <select name="select" id="1" class="border my-2 uppercase text-">
+            <option value="dinner">Breakfast</option>
+            <option value="lunch" selected>lunch</option>
+            <option value="dinner">Dinner</option>
+          </select>
+          <hr />
+          <nav class="flex">
+            <menu class="menu text-base border h-screen">
+              <li class=""><a href="#">salad</a></li>
+              <li><a href="#">soap</a></li>
+              <li><a href="#">grain bowl</a></li>
+              <li><a href="#">kebab</a></li>
+              <li><a href="#">rice</a></li>
 
+              <li
+                class="mt-8 border-y text-center bg-green-700 text-white hover:bg-green-800">
+                <a href="#">Add Section</a>
+              </li>
+            </menu>
+            <hr />
+            <ul class="ul text-base border">
+              <li><a href="#">low Cooker Golde Soup</a></li>
+              <li><a href="#">Honey Shrimp Soup</a></li>
+              <li><a href="#">Spicy Miso Romwn</a></li>
+              <li><a href="#">Coconut Corn Chowder</a></li>
+              <li><a href="#">Vegetable Soup</a></li>
+              <li><a href="#">Extra Spicy</a></li>
+              <li><a href="#">Chicken Soup</a></li>
+              <li
+                class="mt-8 border-y text-center bg-green-700 text-white hover:bg-green-800">
+                <a href="#">Add Recipe</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="main-container__right">
+        <!-- my bottom of the main page section -->
+        <div class="container-bottom">
+          <div class="ingredients">
+            <h2 class="text-xl font-bold">Ingredients</h2>
+            <ul class="list-disc pl-4">
+              <li>
+                8 oz. ground chicken or pork (sub crumbled tempeh or tofu)
+              </li>
+              <li>2 Tbsp. neutral cooking oil</li>
+              <li>
+                6 to 8 oz. thinly sliced shiitake mushrooms, stems removed
+              </li>
+              <li>½ cup minced shallots</li>
+              <li>4 garlic cloves, minced</li>
+              <li>1 Tbsp. freshly grated ginger</li>
+              <li>3 Tbsp. white miso paste</li>
+              <li>2 Tbsp. lower-sodium soy sauce</li>
+              <li>2 Tbsp. rice vinegar</li>
+              <li>1 Tbsp. hot chili oil</li>
+              <li>6 to 8 cups low sodium chicken or vegetable broth</li>
+              <li>2 packs dry ramen noodles (seasoning packs discarded)</li>
+              <li>1 cup sweet corn (frozen/thawed, canned, or fresh)</li>
+              <li>3 soft-boiled eggs, halved</li>
+              <li>Thinly sliced green onions for garnish</li>
+              <li>Toasted sesame seeds for garnish</li>
+            </ul>
+          </div>
+
+          <div class="instructions">
+            <h2 class="text-xl font-bold">Instructions</h2>
+            <ol class="list-decimal pl-4">
+              <li>Heat a stock pot or Dutch oven over medium heat.</li>
+              <li>
+                Once hot, lightly grease and add chicken or pork (or vegetarian
+                alternative).
+              </li>
+              <li>
+                Cook for 4 to 5 minutes, using a wooden spoon to break meat into
+                small pieces.
+              </li>
+              <li>Transfer meat to a bowl and set aside.</li>
+              <li>
+                Add oil to pan, along with mushrooms. Cook 5 minutes, until
+                golden and tender.
+              </li>
+
+              <li>
+                Stir in shallots, garlic, and ginger; cook 2 to 3 more minutes,
+                until aromatic.
+              </li>
+              <li>
+                Ladle ramen into bowls, and top each serving with 1 soft-boiled
+                egg, a handful of green onions, and toasted sesame seeds. For
+                more spice, drizzle extra chili oil overtop.
+              </li>
+            </ol>
+          </div>
+          <div class="nutrition">
+            <table class="table-auto w-full">
+              <thead>
+                <tr>
+                  <th colspan="2" class="text-left px-4 py-2">Nutrition</th>
+                </tr>
+                <tr>
+                  <th class="text-left px-4 py-2">Item</th>
+                  <th class="text-left px-4 py-2">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-left px-4 py-2">Serving</td>
+                  <td class="text-left px-4 py-2">2.5 cups</td>
+                </tr>
+                <tr>
+                  <td class="text-left px-4 py-2">Calories</td>
+                  <td class="text-left px-4 py-2">492kcal</td>
+                </tr>
+                <tr>
+                  <td class="text-left px-4 py-2">Sugar</td>
+                  <td class="text-left px-4 py-2">4g</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <button
+            class="bg-green-800 hover:bg-green-500 text-white font-bold py-2 px-4 rounded"
+            onclick="ShareButton()">
+            Share
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
