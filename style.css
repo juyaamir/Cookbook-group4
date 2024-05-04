@@ -28,6 +28,12 @@ height: 4rem;
 }
 .header-font {
 font-family: "Sofia", sans-serif;
+animation: logo 3s infinite;
+}
+
+@keyframes logo {
+    from {background-color: yellow;}
+    to {background-color: green; color: white;}
 }
 .menu li, .ul li {
 padding: .3rem;
