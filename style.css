@@ -1,20 +1,38 @@
 .main-container{
-    display: grid;
-    grid-template-columns: 15rem 1fr;
-    grid-template-rows: 100vh;
-    grid-template-areas: 
-                        "left right";
-}
-.main-container div {
-    border: 1px solid;
+display: grid;
+grid-template-columns: 20rem 1fr;
+grid-template-rows: 100vh;
+grid-template-areas:
+"left right";
 }
 
 .main-container__left {
-    grid-area: left;
-    background-color: rgb(231, 227, 222);
+grid-area: left;
 }
 
 .main-container__right {
-    grid-area: right;
-    background-color: gainsboro;
+grid-area: right;
+background-color: gainsboro;
+height: 150vh;
+}
+
+.header {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.header img{
+width: 4rem;
+height: 4rem;
+}
+.header-font {
+font-family: "Sofia", sans-serif;
+}
+.menu li, .ul li {
+padding: .3rem;
+}
+ul li:hover, menu li:hover {
+color: #ffffff;
+background-color: rgb(12, 14, 16);
 }
