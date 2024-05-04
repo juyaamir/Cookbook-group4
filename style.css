@@ -1,44 +1,52 @@
-.main-container{
-display: grid;
-grid-template-columns: 20rem 1fr;
-grid-template-rows: 100vh;
-grid-template-areas:
-"left right";
+@import url("./css/main-bottom.css");
+
+.main-container {
+  display: grid;
+  grid-template-columns: 20rem 1fr;
+  grid-template-rows: 100vh;
+  grid-template-areas: "left right";
 }
 
 .main-container__left {
-grid-area: left;
+  grid-area: left;
 }
 
 .main-container__right {
-grid-area: right;
-background-color: gainsboro;
-height: 150vh;
+  grid-area: right;
+  background-color: gainsboro;
+  height: 150vh;
 }
 
 .header {
-display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.header img{
-width: 4rem;
-height: 4rem;
+.header img {
+  width: 4rem;
+  height: 4rem;
 }
 .header-font {
-font-family: "Sofia", sans-serif;
-animation: logo 3s infinite;
+  font-family: "Sofia", sans-serif;
+  animation: logo 3s infinite;
 }
 
 @keyframes logo {
-    from {background-color: yellow;}
-    to {background-color: green; color: white;}
+  from {
+    background-color: yellow;
+  }
+  to {
+    background-color: green;
+    color: white;
+  }
 }
-.menu li, .ul li {
-padding: .3rem;
+.menu li,
+.ul li {
+  padding: 0.3rem;
 }
-ul li:hover, menu li:hover {
-color: #ffffff;
-background-color: rgb(12, 14, 16);
+ul li:hover,
+menu li:hover {
+  color: #ffffff;
+  background-color: rgb(12, 14, 16);
 }
