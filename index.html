@@ -1,21 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <!--  <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Tangerine"> -->
     <title>CookBook Group4</title>
 </head>
-<body>
-    <div class="main-container ">
-        <div class="main-container__left">
-            <div class="left-container">
 
+<body>
+    <div class="main-container postion-fixed">
+        <div class="main-container__left mx-4">
+            <div class="left-container ">
+                <header>
+                    <div class="header mt-4">
+                        <img src="./pictures/Miso Hungry.png" alt="logo">
+                        <h1 class="text-3xl header-font">Miso Happy</h1>
+                    </div>
+                    <p class="text-center font-thin text-xs">420/ Recipes</p>
+                </header>
+                <hr>
+                <select name="select" id="1" class="border my-2 uppercase text-">
+                    <option value="dinner">Breakfast</option>
+                    <option value="lunch" selected>lunch</option>
+                    <option value="dinner">Dinner</option>
+                </select>
+                <hr>
+                <nav class="flex">
+                    <menu class=" menu text-base border h-screen font-mono">
+                        <li class=""><a href="#">salad</a></li>
+                        <li><a href="#">soap</a></li>
+                        <li><a href="#">grain bowl</a></li>
+                        <li><a href="#">kebab</a></li>
+                        <li><a href="#">rice</a></li>
+
+                        <li class="mt-8 border-y text-center bg-green-700 text-white hover:bg-green-800">
+                            <a href="#">Add Section</a>
+                        </li>
+                    </menu>
+                    <hr>
+                    <ul class=" ul text-base border font-sand">
+                        <li><a href="#">low Cooker Golde Soup</a></li>
+                        <li><a href="#">Honey Shrimp Soup</a></li>
+                        <li><a href="#">Spicy Miso Romwn</a></li>
+                        <li><a href="#">Coconut Corn Chowder</a></li>
+                        <li><a href="#">Vegetable Soup</a></li>
+                        <li><a href="#">Extra Spicy</a></li>
+                        <li><a href="#">Chicken Soup</a></li>
+                        <li class="mt-8 border-y text-center bg-green-700 text-white hover:bg-green-800">
+                            <a href="#">Add Recipe</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
         <div class="main-container__right">
         </div>
     </div>
 </body>
+
 </html>
