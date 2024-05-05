@@ -19,15 +19,34 @@ body {
   width: 100%;
 }
 
+.ingredients li:hover {
+  background-color: inherit !important;
+  color: inherit !important;
+}
+
 .nutrition {
+  padding: 2rem;
   background-color: white;
   width: 100%;
 }
 
 .nutrition table {
   background-color: white;
-
   width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
+.button-area {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
+  margin-bottom: 2rem;
+}
+
+button {
   margin-left: auto;
   margin-right: auto;
 }

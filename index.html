@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Sofia" />
@@ -119,37 +120,39 @@
             </ol>
           </div>
           <div class="nutrition">
-            <table class="table-auto w-full">
+            <table class="border-separate border border-slate-400 ...">
               <thead>
                 <tr>
                   <th colspan="2" class="text-left px-4 py-2">Nutrition</th>
                 </tr>
                 <tr>
-                  <th class="text-left px-4 py-2">Item</th>
-                  <th class="text-left px-4 py-2">Value</th>
+                  <th class="border border-slate-300">Item</th>
+                  <th class="border border-slate-300">Value</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td class="text-left px-4 py-2">Serving</td>
-                  <td class="text-left px-4 py-2">2.5 cups</td>
+                  <td class="border border-slate-300">Serving</td>
+                  <td class="border border-slate-300">2.5 cups</td>
                 </tr>
                 <tr>
-                  <td class="text-left px-4 py-2">Calories</td>
-                  <td class="text-left px-4 py-2">492kcal</td>
+                  <td class="border border-slate-300">Calories</td>
+                  <td class="border border-slate-300">492kcal</td>
                 </tr>
                 <tr>
-                  <td class="text-left px-4 py-2">Sugar</td>
-                  <td class="text-left px-4 py-2">4g</td>
+                  <td class="border border-slate-300">Sugar</td>
+                  <td class="border border-slate-300">4g</td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <button
-            class="bg-green-800 hover:bg-green-500 text-white font-bold py-2 px-4 rounded"
-            onclick="ShareButton()">
-            Share
-          </button>
+          <div class="button-area">
+            <button
+              class="bg-green-800 hover:bg-green-500 text-white font-bold py-2 px-4 rounded"
+              onclick="ShareButton()">
+              Share
+            </button>
+          </div>
         </div>
       </div>
     </div>
