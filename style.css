@@ -14,7 +14,6 @@
 .main-container__right {
   grid-area: right;
   background-color: white;
-  height: 150vh;
 }
 
 .header {
