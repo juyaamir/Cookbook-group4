@@ -13,7 +13,7 @@
 
 .main-container__right {
   grid-area: right;
-  background-color: gainsboro;
+  background-color: white;
   height: 150vh;
 }
 
