@@ -8,8 +8,17 @@
 
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Sofia" />
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
     <!--  <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Tangerine"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>CookBook Group4</title>
   </head>
 
@@ -25,6 +34,7 @@
             <p class="text-center font-thin text-xs">420/ Recipes</p>
           </header>
           <hr />
+
           <select name="select" id="1" class="border my-2 uppercase text-">
             <option value="dinner">Breakfast</option>
             <option value="lunch" selected>lunch</option>
@@ -40,7 +50,8 @@
               <li><a href="#">rice</a></li>
 
               <li
-                class="mt-8 border-y text-center bg-green-700 text-white hover:bg-green-400">
+                class="mt-8 border-y text-center bg-green-700 text-white hover:bg-green-400"
+              >
                 <a href="#">Add Section</a>
               </li>
             </menu>
@@ -54,7 +65,8 @@
               <li><a href="#">Extra Spicy</a></li>
               <li><a href="#">Chicken Soup</a></li>
               <li
-                class="mt-8 border-y text-center bg-green-700 text-white hover:bg-green-400">
+                class="mt-8 border-y text-center bg-green-700 text-white hover:bg-green-400"
+              >
                 <a href="#">Add Recipe</a>
               </li>
             </ul>
@@ -64,6 +76,69 @@
       <div class="main-container__right">
         <!-- my bottom of the main page section -->
         <div class="container-bottom">
+          <!-- The Image section -->
+          <article class="bg-[#e6e6fa] rounded shadow p-4">
+            <header class="flex gap-6 text-gray-500">
+              <i
+                class="fa-solid fa-pen cursor-pointer hover:text-green-500"
+              ></i>
+              <i
+                class="fa-solid fa-bars cursor-pointer hover:text-green-500"
+              ></i>
+              <i
+                class="fa-solid fa-calendar cursor-pointer hover:text-green-500"
+              ></i>
+              <i
+                class="fa-solid fa-up-right-and-down-left-from-center cursor-pointer hover:text-green-500"
+              ></i>
+              <i
+                class="fa-solid fa-ruler cursor-pointer hover:text-green-500"
+              ></i>
+              <i
+                class="fa-solid fa-share-nodes cursor-pointer hover:text-green-500"
+              ></i>
+              <i
+                class="fa-solid fa-file-lines cursor-pointer hover:text-green-500"
+              ></i>
+              <i
+                class="fa-solid fa-trash-can cursor-pointer hover:text-green-500"
+              ></i>
+              <i
+                class="fa-solid fa-ellipsis-vertical cursor-pointer hover:text-green-500"
+              ></i>
+            </header>
+            <h2 class="text-center text-xl font-bold uppercase my-3">
+              Human Sauce
+            </h2>
+            <hr class="border-gray-300 p-2" />
+            <p class="font-[Lobster]">
+              A blend of sweet and sour with hot and spicy
+            </p>
+            <figure class="relative">
+              <img class="rounded" src="./pictures/ice-scream.jpg" alt="" />
+
+              <section class="organic-ice-scream px-4">
+                <h3 class="text-center capitalize font-bold">
+                  organic ice cream
+                </h3>
+                <p class="text-slate-800 font-[500] py-4">
+                  We are here to serve you with delicious organic ice cream!
+                  Enjoy your ice scream!
+                </p>
+              </section>
+            </figure>
+
+            <section class="flex gap-9">
+              <aside>
+                <h4 class="text-xs font-bold">Group 4 Award</h4>
+                <p class="text-xs">Source for one stir-fry recipe</p>
+              </aside>
+              <aside>
+                <h2 class="text-xs font-bold text-[gray]">Total</h2>
+                <p class="text-xs">5 min</p>
+              </aside>
+            </section>
+          </article>
           <div class="ingredients">
             <h2 class="text-xl font-bold">Ingredients</h2>
             <ul class="list-disc pl-4">
@@ -149,7 +224,8 @@
 
           <button
             class="bg-green-800 hover:bg-green-500 text-white font-bold py-2 px-4 rounded mb-10"
-            onclick="ShareButton()">
+            onclick="ShareButton()"
+          >
             Share
           </button>
         </div>

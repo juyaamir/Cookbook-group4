@@ -1,0 +1,15 @@
+.organic-ice-scream {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.organic-ice-scream:hover {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+}
+
