@@ -1,4 +1,5 @@
 @import url("./css/main-bottom.css");
+@import url("./css/main-image.css");
 
 .main-container {
   display: grid;
