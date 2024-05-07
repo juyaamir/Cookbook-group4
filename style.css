@@ -1,20 +1,26 @@
 @import url("./css/main-bottom.css");
 @import url("./css/main-image.css");
 
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .main-container {
-  display: grid;
-  grid-template-columns: 20rem 1fr;
-  grid-template-rows: 100vh;
-  grid-template-areas: "left right";
+   display: grid;
+  grid-template-columns: 20rem 1fr; 
+  grid-template-areas: "left right"; 
+
 }
 
 .main-container__left {
   grid-area: left;
+  position: fixed;
+  margin-left: 3rem;
 }
 
 .main-container__right {
   grid-area: right;
-  background-color: white;
 }
 
 .header {
@@ -31,6 +37,10 @@
   font-family: "Sofia", sans-serif;
   animation: logo 3s infinite;
 }
+.navigation {
+  height: 60vh;
+}
+
 
 @keyframes logo {
   from {
@@ -49,4 +59,29 @@ ul li:hover,
 menu li:hover {
   color: #ffffff;
   background-color: rgb(12, 14, 16);
+}
+
+@media only screen and (max-width: 480px){
+.main-container {
+grid-template-columns: 1fr;
+grid-template-areas:
+"left"
+"right";
+}
+.main-container__left{
+position: static;
+margin: auto;
+}
+.article-container,.meals-info,.ingredients,
+.instructions, .nutrition{
+width: 20rem;
+}
+}
+
+@media only screen and (max-width: 768px){
+.ingredients,
+.instructions, .nutrition, .article-container{
+padding: .2rem;
+}
+
 }

@@ -24,7 +24,7 @@
 
   <body>
     <div class="main-container">
-      <div class="main-container__left mx-4 fixed">
+      <div class="main-container__left">
         <div class="left-container">
           <header>
             <div class="header mt-4">
@@ -41,17 +41,15 @@
             <option value="dinner">Dinner</option>
           </select>
           <hr />
-          <nav class="flex">
-            <menu class="menu text-base border h-screen">
+          <nav class="flex navigation">
+            <menu class="menu text-base border">
               <li class=""><a href="#">salad</a></li>
               <li><a href="#">soap</a></li>
               <li><a href="#">grain bowl</a></li>
               <li><a href="#">kebab</a></li>
               <li><a href="#">rice</a></li>
 
-              <li
-                class="mt-8 border-y text-center bg-green-700 text-white hover:bg-green-400"
-              >
+              <li class="mt-8 border-y text-center bg-green-700 text-white hover:bg-green-400">
                 <a href="#">Add Section</a>
               </li>
             </menu>
@@ -78,8 +76,8 @@
         <!-- my bottom of the main page section -->
         <div class="container-bottom">
           <!-- The Image section -->
-          <article class="bg-[#F2FAF5] rounded shadow p-4 article-container">
-            <header class="flex gap-6 text-gray-500">
+          <article class="bg-[#F2FAF5] rounded shadow article-container">
+            <header class="flex gap-6 text-gray-500 flex-wrap">
               <i
                 class="fa-solid fa-pen cursor-pointer hover:text-green-500"
               ></i>
@@ -108,7 +106,7 @@
                 class="fa-solid fa-ellipsis-vertical cursor-pointer hover:text-green-500"
               ></i>
             </header>
-            <h2 class="text-center text-xl font-bold uppercase my-3">
+            <h2 class="text-center text-base font-bold uppercase my-3">
               SPICY MISO RAMEN
             </h2>
             <hr class="border-gray-300 p-2" />
@@ -235,7 +233,7 @@
           </div>
 
           <button
-            class="bg-green-800 hover:bg-green-500 text-white font-bold py-2 px-4 rounded mb-10"
+            class="bg-green-800 hover:bg-green-500 text-white font-bold py-2 px-4 rounded my-10"
             onclick="ShareButton()"
           >
             Share

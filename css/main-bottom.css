@@ -13,7 +13,7 @@ body {
 
 .ingredients,
 .instructions {
-  width: 65%;
+  width: 80%;
   margin: auto;
   padding: 2rem;
   
@@ -30,7 +30,7 @@ body {
 }
 
  table {
-  width: 65%;
+  width: 80%;
   margin: auto;
 
 }

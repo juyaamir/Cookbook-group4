@@ -1,6 +1,7 @@
 .article-container {
-  width: 60%;
+  width: 80%;
   margin: auto;
+  padding: 2rem;
 }
 
 .organic-ice-scream {
@@ -21,7 +22,7 @@
 }
 
 .meals-info {
-  width: 60%;
+  width: 80%;
   margin: auto;
   background-color: #065224;
   border-radius: 0.2rem;
